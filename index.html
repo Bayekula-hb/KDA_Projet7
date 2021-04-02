@@ -4,19 +4,83 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Style/style.css">
         <title>Hobed Bayekula</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="Style/style.css">
     </head>
     <body>
-        <div class="container">
-            <header class="container__head">
-
+        <div id="container" class="container">
+            <header class="container__head block--flex--row">
+                <div class="head__title">
+                    <h1 class="btn--primary">Hobed Bayekula</h1>
+                    <h1 class="btn--primary btn--mobile">HB</h1>
+                </div>
+                <div class="head__menu">
+                    <ul class="menu__liste">
+                        <li><a href="#container" rel="noopener noreferrer" class="btn btn--primary btn--menu">Accueil</a></li>
+                        <li><a href="#projets" rel="noopener noreferrer" class="btn btn--primary btn--menu">Projets</a></li>
+                        <li><a href="#a__propos" rel="noopener noreferrer" class="btn btn--primary btn--menu">A propos</a></li>
+                        <li><a href="#contact" rel="noopener noreferrer" class="btn btn--primary btn--contact">Contact</a></li>
+                        <li class="btn--primary">Sombre</li>
+                    </ul>
+                    <div class="menu__mobile">
+                        <a href="#" class="menu barre">&#9776</a>
+                        <!-- <div class="menu__barre mobile--menu--1"></div><br>
+                        <div class="menu__barre mobile--menu--2"></div><br> -->
+                        <!-- <div class="menu__barre mobile-menu-3"></div> -->
+                    </div>
+                </div>
             </header>
             <main class="container__main">
+                <section class="section section--1">
+                    <div class="section--div section--div--1  block--flex--col">
+                        <h2>Je suis hobed Bayekula</h2>
+                        <p class="para--hard"> Développeur full-stack | Admnistrateur de base de donnée</p>
 
+                        <div class="img--div">
+                        </div>
+                        <button class="btn btn--contact">Contactez moi</button>
+                    </div>
+                </section>
+                <section class="section section--2">
+                    <div class="section--div section--div--2 block--flex--col">
+                        <h2>Les technologies </h2>
+
+                    </div>
+                </section>
+                <section class="projets section section--3">
+                    <div class="section--div section--div--3 block--flex--col">
+                        <h2>Projets</h2>
+
+                    </div>
+                </section>
+                <section class="section section--4">
+                    <div class="section--div section--div--4  block--flex--row">
+                        <div class="div--contact div--contact--form">
+                            <!-- <h3 class="h3--section--4">Message</h3> -->
+                            <form action="" method="post">
+                                <input type="text" name="name" class="input" placeholder="Votre nom">
+                                <input type="email" name="mail" class="input"  placeholder="monnom@contact.com">
+                                <input type="text" name="objet" class="input"  placeholder="Objet du message" >
+                                <textarea name="content" cols="30" rows="5" placeholder="Mon message"></textarea>
+                                <button type="submit" class="btn btn--primary btn--contact"> Envoyer </button>
+                            </form>
+                        </div>
+                        <div class="div--contact div--contact--details">
+                            <p>Je suis <span class="span span-name"> hobed Bayekula</span> développeur <span class="span span-blue">full-stack</span> depuis plusieurs 
+                            années. J'ai travaillé dans plusieurs des projets innovants en république démocratique du congo
+                        et dans plusieurs pays du monde. Je travail également comme un <span class="span span-blue">freelancer</span> pour
+                        plusieurs structures dans le monde. <br> <span class="span span-blue">Analyste</span> programmeur et <span class="span span-blue">administrateur de base de donnée</span>, je commence par l'Analyse 
+                        de votre problème en passant par la modélisation du problème enfin par le codage et l'implémentation
+                        de la solution proposée.</p>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer class="container__footer">
-                
+                <div class="footer--div">
+                    <a href="#projet" rel="noopener noreferrer" class="btn btn--primary btn--contact">Contact</a>
+                </div>
             </footer>
         </div>
     </body>

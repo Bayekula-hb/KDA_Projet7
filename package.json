@@ -1,0 +1,5 @@
+{  
+    "scripts": {
+        "compiler_sass":"sass Sass/main.scss Style/style.css --watch"
+    }
+}
