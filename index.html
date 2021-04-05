@@ -20,11 +20,11 @@
                         <li><a href="#container" rel="noopener noreferrer" class="btn btn--primary btn--menu">Accueil</a></li>
                         <li><a href="#projets" rel="noopener noreferrer" class="btn btn--primary btn--menu">Projets</a></li>
                         <li><a href="#a__propos" rel="noopener noreferrer" class="btn btn--primary btn--menu">A propos</a></li>
-                        <li><a href="#contact" rel="noopener noreferrer" class="btn btn--primary btn--contact">Contact</a></li>
+                        <li><a href="" rel="noopener noreferrer" class="btn btn--primary btn--contact btn--contact--menu">Contact</a></li>
                         <li class="btn--primary">Sombre</li>
                     </ul>
                     <div class="menu__mobile">
-                        <a href="#" class="menu barre">&#9776</a>
+                        <a href="#" class="menu__barre">&#9776</a>
                         <!-- <div class="menu__barre mobile--menu--1"></div><br>
                         <div class="menu__barre mobile--menu--2"></div><br> -->
                         <!-- <div class="menu__barre mobile-menu-3"></div> -->
@@ -34,7 +34,7 @@
             <main class="container__main">
                 <section class="section section--1">
                     <div class="section--div section--div--1  block--flex--col">
-                        <h2>Je suis hobed Bayekula</h2>
+                        <h2>Mon nom est hobed Bayekula</h2>
                         <p class="para--hard"> Développeur full-stack | Admnistrateur de base de donnée</p>
 
                         <div class="img--div">
@@ -76,6 +76,23 @@
                         </div>
                     </div>
                 </section>
+                <section class="section section--4 section--4--hidden">
+                    <div class="section--div section--div--4 section--div--4--hidden  block--flex--row">
+                        <div class="div--contact div--contact--form div--contact--form--hidden">
+                            <!-- <button><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg></button> -->
+                            <a href="#" class="btn--close"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg></a>
+                            <h3 class="h3--hidden">Message</h3>
+                            <form action="" method="post">
+                                <input type="text" name="name" class="input" placeholder="Votre nom">
+                                <input type="email" name="mail" class="input"  placeholder="monnom@contact.com">
+                                <input type="text" name="objet" class="input"  placeholder="Objet du message" >
+                                <textarea name="content" cols="30" rows="5" placeholder="Mon message"></textarea>
+                                <button type="submit" class="btn btn--primary btn--contact"> Envoyer </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                
             </main>
             <footer class="container__footer">
                 <div class="footer--div">
@@ -83,5 +100,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./Js/app.js"></script>
     </body>
 </html>

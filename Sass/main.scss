@@ -1,15 +1,18 @@
-@import "variables.scss";
+@import "utils/variables";
+@import "base/typography";
 *{
     margin: 0; padding: 0;
+    letter-spacing:0.25rem;
 }
 html{
     font-size: 62.5%;
+    font-family: 'Ubuntu Mono', monospace;
 }
 .container{
     width: 100%;
     &__head{
         width: 97%;
-        height: 10%;
+        height: 13%;
         padding: 1.5%;
         background-color: $colo-blue;
         background-color: #273c75;
@@ -113,7 +116,6 @@ a{
             margin-right: 0%;
         }
     }
-
     &--contact{
         color: #fff;
         background-color: $color-btn-orange;
@@ -151,7 +153,9 @@ a{
     padding: 2%;
     &--1{
         background:url("../Public/Image/js_code.jpg") no-repeat scroll;
+        height: 80.6vh;
         background-size: cover;
+        background-size:100%;
         border-bottom: 2px solid #00f;
         opacity: 0.8;
         .section--div--1{
@@ -200,10 +204,8 @@ a{
     &--4{
         .div--contact {
             width: 48%;
-            border: #4200f7 3px solid;
             &--form{
                 width: 47%;
-                border: #fc3a09 3px solid;
                 .h2--section--4{
                     left: 0%;
                 }
@@ -226,6 +228,7 @@ a{
                         outline: none;
                         border: 3px solid #280bcc ;
                         border-radius: $border-radius-btn;
+                        text-align: justify;
                     }
                 }
                 .btn--contact{
@@ -247,7 +250,6 @@ a{
             }
             &--details{
                 width: 47%;
-                border: #D80073 3px solid;
                 font-size: 2rem;
                 & > p{
                     padding: 2.8%;
@@ -266,6 +268,80 @@ a{
             }
         }
     }
+    .section--div--4--hidden{
+        position: absolute;
+        width: 70%;
+        width: 97%;
+        margin: 0%;padding: 0%;
+        height: auto;
+        height: 100%;
+        top: 0;
+        display: none;
+        .div--contact--form--hidden{
+            position: relative;
+            padding: 7%;
+            padding: 2%;
+            background-color: #576574;
+            background-color: rgba($color: #576574, $alpha: 0.97);
+            // transform: translate(25%, 17.5%);
+            border-radius: $border-radius-btn;
+            //
+            height: 80%;
+            // border: 2px solid #D80073;
+            top: 9%;
+            //
+            & svg{
+                color: #fff;
+                width: 8%;
+                height: 8%;
+                position: relative;
+                // top :-21%;
+                // top: -18.5%;
+                // right: -113.2%;
+                // right: -109.6%;
+                //
+                top : -6.4%;
+                right: -99.3%;
+                //
+                // background-color: #576574;
+                border-radius: $border-radius-btn;
+                width: 5.2%;
+                cursor: pointer;
+                &:hover{
+                    color: #D80073;
+                    transition: 0.5ms;
+                }
+            }
+            h3{
+                font-size: 2.4rem;
+                color: #D80073;
+                color: #fff;
+                letter-spacing:0.3rem;
+                padding-left: 3.5%;
+            }
+            input, textarea {
+                &:focus{
+                    outline: none;
+                    border: 3px solid #D80073 ;
+                    border-radius: $border-radius-btn;
+                    text-align: justify;
+                }
+            }
+            .btn--contact{
+                &:hover{
+                    color: #fff;
+                }
+                &:focus{
+                    outline: none;
+                    border: 3px solid #D80073 ;
+                    border-radius: $border-radius-btn;
+                }
+            }
+        }
+    }
+}
+.block--view{
+    display: flex;
 }
 @media all and (max-device-width : 480px) and (max-device-width : 768px){
     .container{
