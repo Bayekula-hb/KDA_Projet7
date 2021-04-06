@@ -1,5 +1,7 @@
 @import "utils/variables";
 @import "base/typography";
+@import "components/img";
+@import "components/div__reseaux__img";
 *{
     margin: 0; padding: 0;
     letter-spacing:0.25rem;
@@ -152,16 +154,18 @@ a{
     height: auto;
     padding: 2%;
     &--1{
-        background:url("../Public/Image/js_code.jpg") no-repeat scroll;
-        height: 80.6vh;
+        // background:url("../Public/Image/js_code.jpg") no-repeat scroll;
+        // height: 80.6vh;
         background-size: cover;
         background-size:100%;
         border-bottom: 2px solid #00f;
         opacity: 0.8;
+        background-color: #353b48;
+
         .section--div--1{
             width: 50%;
             margin: auto;
-            margin-top: 5%;
+            margin-top: 0%;
             & h2, & p{
                 color: rgba(255, 255, 255, 0.925);
                 font-weight: 700;
