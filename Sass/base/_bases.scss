@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu Mono', monospace;
+}
+body {
+    box-sizing: border-box;
+}
+h1{
+    color: #fff;
+    font-weight: 900;
+}
+h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,56 @@
+@media all and (max-device-width : 480px) and (max-device-width : 768px){
+    .container{
+        &__head{
+            background-color: $background--btn;
+            .head__title, .head__menu{
+                background-color: $background--btn;
+            }
+            .head__title{
+                h1{
+                    display: none;
+                }
+                .btn--mobile{
+                    display: inline-block;
+                    background-color: transparent;
+                }
+            }
+            .head__menu{
+                
+                .menu__liste{
+                    display: none;
+                }
+                .menu__mobile{
+                    width: auto;
+                    & a{
+                        color: #fff;
+                        width: 70%;
+                        height: 20%;
+                        font-size: 3rem;
+                    }
+                }
+                .menu__barre{
+                }
+                .mobile--menu--1, .mobile--menu--2{
+                }
+            }
+        }
+    }
+    .section--div--4{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+        .div--contact{
+            width: 98.7%;
+            &--form{
+                width: 90%;
+                padding: 3%;
+                margin-bottom: 4%;
+            }
+            &--details{
+                font-size: 1.7rem;
+            }
+        }
+    }
+}

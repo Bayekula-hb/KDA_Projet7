@@ -1,0 +1,68 @@
+@mixin btn{
+    &--primary{
+        font-size: $font-size-h2;
+    }
+    &--action{
+        background-color: $background--btn;
+        font-size: 2rem;
+        color: $color-btn-index;
+        border: 0px solid $background--btn;
+        border-radius: $border-radius-btn;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0.7%;
+        width: auto;
+        margin: auto;
+        margin-top: 4%;
+        cursor: pointer;
+        &:hover{
+            background-color: transparent;
+            border: 3px solid $background--btn;
+        }
+    }
+    &--contact{
+        color: #fff;
+        background-color: $color-btn-orange;
+        border-radius: $border-radius-btn;
+        text-align: center;
+        padding: 4%;
+        font-size: 2.5rem;
+        box-sizing: content-box;
+        border: 2px solid #D80073;
+        &:hover{
+            background-color: transparent;
+            border: 2px solid #D80073;
+            border-radius: $border-radius-btn;
+            margin-right: 0%;
+        }
+    }
+    &--menu{
+        color: #fff;
+        &::after{
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background: #F3506B;
+            transition: width .3s;
+        }
+        &:hover::after{
+            width: 100%;
+            transition: width .3s;
+        }
+    }
+}
+
+@mixin block--flex--row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+@mixin block--flex--col{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+@mixin display--inline {
+    display: inline-block;
+}
