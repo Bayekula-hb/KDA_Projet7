@@ -11,6 +11,9 @@
 @mixin display--inline {
     display: inline-block;
 }
+@mixin border-radius($taille){
+    border-radius: $taille;
+}
 @mixin btn{
     &--primary{
         font-size: $font-size-h2;
