@@ -69,9 +69,54 @@
         }
     }
     &--2{
-        .section--div--2 h2{
+        height: auto;
+        .section--div--2 {
+            & h2{
             color: #222f3e;
+            }
+            .div--technologie{
+                //@include block--flex--row;
+                & .div--soft{
+                    width: 80%;
+                    margin: 0 auto;
+                    @include block--flex--row;
+                    flex-wrap: wrap;
+                    padding: 3%;
+
+                    & figure{
+                        width: 24%;
+                        height: auto;
+                        margin: 0 0.5%;
+                        @include block--flex--col;
+                        align-items: center;
+                        color: #D80073;
+                        .img--language{
+                            width: 45%;
+                            height: 45%;
+                        }
+                        &:hover{
+                            color: $color--blue;
+                        }
+                        figcaption{
+                            text-align: center;
+                            font-size: 1.8rem;
+                            text-transform: uppercase;
+                            padding: 2% 0;
+                        }
+                    }
+                }
+                // & .div--others{
+                //     width: 44%;
+                //     border: 3px solid #cc320b;
+                //     & svg{
+                //         width: 31%;
+                //         height: 25%;
+                //         color: #D80073;
+                //     }
+                // }
+            }
         }
+        
     }
     &--3{
         background-color: #576574;
@@ -82,6 +127,14 @@
         }
     }
     &--4{
+        .h2--section--4{
+            width: 40%;
+            margin: 0 auto;
+            & > i{
+                color: #D80073;
+                font-size: 9rem;
+            }
+        }
         .div--contact {
             width: 48%;
             &--form{
