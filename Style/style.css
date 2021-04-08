@@ -3,7 +3,6 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
   box-sizing: border-box;
 }
 
@@ -22,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
 }
@@ -114,7 +113,7 @@ a {
   font-weight: 700;
 }
 .btn--primary {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 .btn--action {
   background-color: #D80073;
@@ -211,7 +210,7 @@ a {
   padding-bottom: 5%;
 }
 .section--1 .section--div--1 .para--hard {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 2%;
   color: #D80073 !important;
 }
@@ -458,6 +457,41 @@ a {
   border: 3px solid #D80073;
   border-radius: 12px;
 }
+.section--5 {
+  color: #fff;
+  background-color: #718093;
+}
+.section--5--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.section--5--container .section--div--5 {
+  background-color: #718093;
+}
+.section--5--container .section--div--5 .div--apropos {
+  width: 47%;
+  font-size: 2rem;
+  width: 60%;
+  margin: 3% auto;
+}
+.section--5--container .section--div--5 .div--apropos > p {
+  padding: 2.8%;
+  text-align: justify;
+  color: #576574;
+}
+.section--5--container .section--div--5 .div--apropos > p .span {
+  font-weight: 900;
+}
+.section--5--container .section--div--5 .div--apropos > p .span-name {
+  color: #D80073;
+}
+.section--5--container .section--div--5 .div--apropos > p .span-blue {
+  color: #4200f7;
+}
+.section--5--container .section--div--5 .div--apropos > p {
+  color: #dcdde1;
+}
 
 .container--coordonnees h3 {
   font-size: 2rem;
@@ -490,7 +524,10 @@ a {
   display: flex;
 }
 
-@media all and (max-device-width: 480px) and (max-device-width: 768px) {
+@media all and (max-device-width: 480px) {
+  .container h2, .container .para--hard, .container i {
+    font-size: 1.6rem;
+  }
   .container__head {
     background-color: #D80073;
   }
@@ -516,6 +553,27 @@ a {
     height: 20%;
     font-size: 3rem;
   }
+  .container__main .section--1 .section--div--1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .container__main .section--1 .section--div--1 h2 {
+    width: 28%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .container__main .section--1 .section--div--1 .para--hard {
+    text-align: center;
+    width: 33%;
+    margin: auto;
+    font-size: 1.7rem;
+  }
+  .container__main .section--1 .section--div--1 button {
+    width: 50%;
+    font-size: 2rem;
+  }
+
   .section--div--4 {
     width: 98%;
     display: flex;

@@ -62,7 +62,7 @@
                 padding-bottom: 5%;
             }
             .para--hard{
-                font-size: 3rem;
+                font-size: 2rem;
                 padding-top: 2%;
                 color: #D80073!important;
             }
@@ -75,7 +75,6 @@
             color: #222f3e;
             }
             .div--technologie{
-                //@include block--flex--row;
                 & .div--soft{
                     width: 80%;
                     margin: 0 auto;
@@ -242,22 +241,7 @@
                 }
             }
             &--details{
-                width: 47%;
-                font-size: 2rem;
-                & > p{
-                    padding: 2.8%;
-                    text-align: justify;
-                    color: #576574;
-                    .span{
-                        font-weight: 900;
-                        &-name{
-                            color: #D80073;
-                        }
-                        &-blue{
-                            color: #4200f7;
-                        }
-                    }
-                }
+                @include about;
             }
         }
     }
@@ -318,6 +302,25 @@
                     border: 3px solid #D80073 ;
                     border-radius: $border-radius-btn;
                 }
+            }
+        }
+    }
+    &--5{
+        color: #fff;
+        background-color: #718093;
+        &--container{
+            @include block--flex--row;
+            .section--div--5{
+                background-color: #718093;
+                .div--apropos{
+                    @include about;
+                    width: 60%;
+                    margin: 3% auto;
+                    & > p{
+                        color: #dcdde1;
+                    }
+                }
+    
             }
         }
     }

@@ -23,4 +23,3 @@ btn__fermer.addEventListener("click", function(event){
     //document.querySelector(".section--div--4--hidden").style.display = "none";
 })
 console.log(btn__contact);
-//console.log(form);

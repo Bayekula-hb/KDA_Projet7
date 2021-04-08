@@ -69,3 +69,21 @@
     }
 }
 
+@mixin about {
+    width: 47%;
+    font-size: 2rem;
+    & > p{
+        padding: 2.8%;
+        text-align: justify;
+        color: #576574;
+        .span{
+            font-weight: 900;
+            &-name{
+                color: #D80073;
+            }
+            &-blue{
+                color: #4200f7;
+            }
+        }
+    }
+}

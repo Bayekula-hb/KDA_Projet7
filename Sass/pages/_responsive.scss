@@ -1,5 +1,8 @@
-@media all and (max-device-width : 480px) and (max-device-width : 768px){
+@media all and (max-device-width : 480px){
     .container{
+        h2, .para--hard, i{
+            font-size: 1.6rem;
+        }
         &__head{
             background-color: $background--btn;
             .head__title, .head__menu{
@@ -31,6 +34,28 @@
                 .menu__barre{
                 }
                 .mobile--menu--1, .mobile--menu--2{
+                }
+            }
+        }
+        &__main{
+            .section--1{
+                & .section--div--1{
+                    @include block--flex--col;
+                    h2{
+                        width: 28%;
+                        margin: auto;
+                        font-size: 1rem;
+                    }
+                    .para--hard{
+                        text-align:center;
+                        width: 33%;
+                        margin: auto;
+                        font-size: 1.7rem;
+                    }
+                    button{
+                        width: 50%;
+                        font-size: 2rem;
+                    }
                 }
             }
         }

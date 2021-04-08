@@ -1,0 +1,24 @@
+{
+    "image":[
+        {"id":"1", "image1":"./Public/Image/IMG_0583 (1).jpg"}
+    ],
+    "link":[
+        {"id":"1", "linkedin":"https://linkedin.com/in/hobed-bayekula-a6487b184"},
+        {"id":"2", "github":"https://github.com/Bayekula-hb"},
+        {"id":"3", "twitter":"https://twitter.com/hobedbayekula"},
+        {"id":"4", "instagram":"https://www.instagram.com/hbbayekula/?hl=fr"}
+    ],
+    "language":[
+        {"id":"1", "html":"./language/html5-brands.svg"},
+        {"id":"2", "css":"./Public/language/css3-alt-brands.svg"},
+        {"id":"3", "vuejs":"./Public/language/vuejs-brands.svg"},
+        {"id":"4", "nodejs":"./Public/language/node-js-brands.svg"},
+        {"id":"5", "php":"./Public/language/php-brands.svg"},
+        {"id":"6", "react":"./Public/language/react-brands.svg"},
+        {"id":"7", "js":"./Public/language/js-square-brands.svg"},
+        {"id":"8", "database":"./Public/language/database-solid.svg"}
+    ],
+    "contact":[
+        {}
+    ]
+}
