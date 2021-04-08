@@ -4,16 +4,17 @@ let link_instagram = document.querySelector(".link--instagram");
 let link_twitter = document.querySelector(".link--twitter");
 let tab__link =[];
 
-window.addEventListener('load'), (()=>{
-    fetch("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/link").then((response) =>{ 
+window.addEventListener("load", ()=>{
+    fetch("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/link").then(response =>{
         return response.json();
-        }).then((donnee)=>{
-            for(const lien of donnee) {
-                link_instagram.setAttribute('href',lien.instagram);
-                link_linkedin.setAttribute('href',lien.linkedin);
-                link_twitter.setAttribute('href',lien.twitter);
-                link_github.setAttribute('href',lien.github);
-            }
+    }).then(donnee =>{
+        for(const lien of donnee) {
+            link_instagram.setAttribute('href',lien.instagram);
+            link_linkedin.setAttribute('href',lien.linkedin);
+            link_twitter.setAttribute('href',lien.twitter);
+            link_github.setAttribute('href',lien.github);
+        }
+    });
 });
 let btn__contact = document.querySelector(".btn--contact--menu");
 let section = document.querySelector(".section--div--4--hidden");
