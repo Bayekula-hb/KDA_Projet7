@@ -5,7 +5,7 @@ let link_twitter = document.querySelector(".link--twitter");
 let tab__link =[];
 
 window.addEventListener('load'), (()=>{
-    fetch.apply("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/link").then((response) =>{ 
+    fetch("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/link").then((response) =>{ 
         return response.json();
         }).then((donnee)=>{
             for(const lien of donnee) {
