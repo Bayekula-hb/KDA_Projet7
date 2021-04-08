@@ -3,11 +3,36 @@ let link_github = document.querySelector(".link--github");
 let link_instagram = document.querySelector(".link--instagram");
 let link_twitter = document.querySelector(".link--twitter");
 
+let img__profile = document.querySelector(".img--profile"),
+    my__name = document.querySelector(".myname");
+
+let msg_apropos = document.querySelector(".div--apropos p");
+
 let img_html = document.querySelectorAll(".img--language");
 console.log(img_html);
+var link_server;
+/**
+ * 
+ * @param {Prends la table qu'on veut sélectionner} table 
+ * @returns {ça returne un lien avec le nom de la table}
+ */
+function link_server_json (table){
+    link_server ="https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/"+table;
+    return link_server;
+}
 
 window.addEventListener("load", ()=>{
-    fetch("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/link").then(response =>{
+    let link = link_server_json("image");
+    fetch(link).then(response =>{
+        return response.json();
+    }).then(donne_db =>{
+        for(const Data of donne_db) {
+            my__name.textContent = Data.name;
+            img__profile.setAttribute('src',Data.image);
+        }
+    });
+    link = link_server_json("link");
+    fetch(link).then(response =>{
         return response.json();
     }).then(donnee =>{
         for(const lien of donnee) {
@@ -17,12 +42,22 @@ window.addEventListener("load", ()=>{
             link_github.setAttribute('href',lien.github);
         }
     });
-    fetch("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/language").then(response =>{
+    link = link_server_json("language");
+    fetch(link).then(response =>{
         return response.json();
     }).then(data_img =>{
+        data_img
         console.log(data_img[3].title);
     });
+    link = link_server_json("apropos");
+    fetch(link).then(response =>{
+        return response.json();
+    }).then(data =>{
+            msg_apropos.textContent = data.message;
+       
+    });
 });
+
 let btn__contact = document.querySelector(".btn--contact--menu");
 let section = document.querySelector(".section--div--4--hidden");
 let btn__fermer = document.querySelector(".btn--close");

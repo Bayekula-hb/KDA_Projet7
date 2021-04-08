@@ -25,5 +25,9 @@
             , "react":"./Public/language/react-brands.svg"
             , "js":"./Public/language/js-square-brands.svg"
             , "database":"./Public/language/database-solid.svg"}
+    ],
+    "apropos":[
+        {"id":"1", "message":"C'est cette curiosité et cette motivation que j'emporte avec moi dans le monde du développement web. Je souhaite continuer à améliorer et à utiliser ces compétences dans ce domaine."
+        }
     ]
 }
