@@ -4,7 +4,7 @@ let link_instagram = document.querySelector(".link--instagram");
 let link_twitter = document.querySelector(".link--twitter");
 let tab__link =[];
 
-window.addEventListener('load'), ()=>{
+window.addEventListener('load'), (()=>{
     fetch.apply("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/link").then((response) =>{ 
         return response.json();
         }).then((donnee)=>{
@@ -14,11 +14,7 @@ window.addEventListener('load'), ()=>{
                 link_twitter.setAttribute('href',lien.twitter);
                 link_github.setAttribute('href',lien.github);
             }
-        });
-
-    });
-}
-
+});
 let btn__contact = document.querySelector(".btn--contact--menu");
 let section = document.querySelector(".section--div--4--hidden");
 let btn__fermer = document.querySelector(".btn--close");
