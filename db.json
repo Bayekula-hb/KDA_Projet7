@@ -1,12 +1,11 @@
 {
     "image":[
-        {"id":"1", "image1":"./Public/Image/IMG_0583 (1).jpg"}
+        {"id":"1", "image":"./Public/Image/IMG_0583 (1).jpg"}
     ],
     "link":[
-        {"id":"1", "linkedin":"https://linkedin.com/in/hobed-bayekula-a6487b184"},
-        {"id":"2", "github":"https://github.com/Bayekula-hb"},
-        {"id":"3", "twitter":"https://twitter.com/hobedbayekula"},
-        {"id":"4", "instagram":"https://www.instagram.com/hbbayekula/?hl=fr"}
+        {"id":"1", "linkedin":"https://linkedin.com/in/hobed-bayekula-a6487b184", "github":"https://github.com/Bayekula-hb",
+            "twitter":"https://twitter.com/hobedbayekula", "instagram":"https://www.instagram.com/hbbayekula/?hl=fr"
+        }
     ],
     "language":[
         {"id":"1", "html":"./language/html5-brands.svg"},
