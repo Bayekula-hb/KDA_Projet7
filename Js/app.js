@@ -53,8 +53,9 @@ window.addEventListener("load", ()=>{
     fetch(link).then(response =>{
         return response.json();
     }).then(data =>{
-            msg_apropos.textContent = data.message;
-       
+        for(element of data){
+            msg_apropos.textContent = element.message;
+        }
     });
 });
 
