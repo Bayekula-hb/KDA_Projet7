@@ -2,7 +2,9 @@ let link_linkedin = document.querySelector(".link--linkedin");
 let link_github = document.querySelector(".link--github");
 let link_instagram = document.querySelector(".link--instagram");
 let link_twitter = document.querySelector(".link--twitter");
-let tab__link =[];
+
+let img_html = document.querySelectorAll(".img--language");
+console.log(img_html);
 
 window.addEventListener("load", ()=>{
     fetch("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/link").then(response =>{
@@ -14,6 +16,11 @@ window.addEventListener("load", ()=>{
             link_twitter.setAttribute('href',lien.twitter);
             link_github.setAttribute('href',lien.github);
         }
+    });
+    fetch("https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/language").then(response =>{
+        return response.json();
+    }).then(data_img =>{
+        console.log(data_img[3].title);
     });
 });
 let btn__contact = document.querySelector(".btn--contact--menu");

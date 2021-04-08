@@ -1,6 +1,6 @@
 {
     "image":[
-        {"id":"1", "image":"./Public/Image/IMG_0583 (1).jpg"}
+        {"id":"1", "name":"hobed Bayekula" ,"image":"./Public/Image/IMG_0583 (1).jpg"}
     ],
     "link":[
         {"id":"1", "linkedin":"https://linkedin.com/in/hobed-bayekula-a6487b184", "github":"https://github.com/Bayekula-hb",
@@ -8,6 +8,16 @@
         }
     ],
     "language":[
+        {"id":"1", "title":"./language/html5-brands.svg"},
+        {"id":"2", "title":"./Public/language/css3-alt-brands.svg"},
+        {"id":"3", "title":"./Public/language/vuejs-brands.svg"},
+        {"id":"4", "title":"./Public/language/node-js-brands.svg"},
+        {"id":"5", "title":"./Public/language/php-brands.svg"},
+        {"id":"6", "title":"./Public/language/react-brands.svg"},
+        {"id":"7", "title":"./Public/language/js-square-brands.svg"},
+        {"id":"8", "title":"./Public/language/database-solid.svg"}
+    ],
+    "language12":[
         {"id":"1", "html":"./language/html5-brands.svg"},
         {"id":"2", "css":"./Public/language/css3-alt-brands.svg"},
         {"id":"3", "vuejs":"./Public/language/vuejs-brands.svg"},
@@ -19,5 +29,14 @@
     ],
     "contact":[
         {}
+    ],
+    "langue":[
+        {"id":"1", "html":"./language/html5-brands.svg", "css":"./Public/language/css3-alt-brands.svg"
+            , "vuejs":"./Public/language/vuejs-brands.svg"
+            , "nodejs":"./Public/language/node-js-brands.svg"
+            , "php":"./Public/language/php-brands.svg"
+            , "react":"./Public/language/react-brands.svg"
+            , "js":"./Public/language/js-square-brands.svg"
+            , "database":"./Public/language/database-solid.svg"}
     ]
 }
