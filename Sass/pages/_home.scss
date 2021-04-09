@@ -15,6 +15,14 @@
 .menu__liste{
     width: 100%;
     @include block--flex--row;
+    .btn--mode{
+        .label--mode{
+            color: rgb(255, 0, 13);
+            .input--mode{
+                color: rgb(255, 0, 13);
+            }
+        }
+    }
 }
 .menu__liste li{
     list-style: none;

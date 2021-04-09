@@ -25,8 +25,8 @@ window.addEventListener("load", ()=>{
     let link = link_server_json("image");
     fetch(link).then(response =>{
         return response.json();
-    }).then(donne_db =>{
-        for(const Data of donne_db) {
+    }).then(data_db =>{
+        for(const Data of data_db) {
             my__name.textContent = Data.name;
             img__profile.setAttribute('src',Data.image);
         }
@@ -49,6 +49,7 @@ window.addEventListener("load", ()=>{
         data_img
         console.log(data_img[3].title);
     });
+    
     link = link_server_json("apropos");
     fetch(link).then(response =>{
         return response.json();

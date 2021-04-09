@@ -101,6 +101,12 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
 }
+.menu__liste .btn--mode .label--mode {
+  color: #ff000d;
+}
+.menu__liste .btn--mode .label--mode .input--mode {
+  color: #ff000d;
+}
 
 .menu__liste li {
   list-style: none;
