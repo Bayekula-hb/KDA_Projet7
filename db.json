@@ -25,9 +25,5 @@
             , "react":"./Public/language/react-brands.svg"
             , "js":"./Public/language/js-square-brands.svg"
             , "database":"./Public/language/database-solid.svg"}
-    ],
-    "apropos":[
-        {"id":"1", "message":"Je suis <span class=\"span span-name\"> hobed Bayekula</span> développeur <span class=\"span span-blue\">full-stack</span> depuis plusieurs années. J'ai travaillé dans plusieurs des projets innovants en république démocratique du congo et dans plusieurs pays du monde. Je travail également comme un <span class=\"span span-blue\">freelancer</span> pour plusieurs structures dans le monde. <br> <span class=\"span span-blue\">Analyste</span> programmeur et <span class=\"span span-blue\">administrateur de base de donnée</span>, je commence par l'Analyse de votre problème en passant par la modélisation du problème enfin par le codage et l'implémentation de la solution proposée."
-        }
     ]
 }
