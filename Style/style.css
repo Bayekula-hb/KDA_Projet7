@@ -30,6 +30,14 @@ a {
   text-decoration: none;
 }
 
+.block--hide {
+  display: none;
+}
+
+.block--view {
+  display: block;
+}
+
 @font-face {
   font-family: "Ubuntu Mono";
   src: url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"');
@@ -81,14 +89,6 @@ a {
 
 .head__menu, .head__title {
   display: inline-block;
-}
-
-.block--view {
-  display: flex;
-}
-
-.btn--mobile {
-  display: none;
 }
 
 .head__menu {
@@ -199,6 +199,9 @@ a {
   width: 50%;
   margin: auto;
   margin-top: 0%;
+}
+.section--1 .section--div--1 .img--profile {
+  margin-bottom: 2%;
 }
 .section--1 .section--div--1 h2, .section--1 .section--div--1 p {
   color: rgba(255, 255, 255, 0.925);
@@ -419,7 +422,6 @@ a {
   height: auto;
   height: 100%;
   top: 0;
-  display: none;
 }
 .section .section--div--4--hidden .div--contact--form--hidden {
   position: relative;
@@ -533,6 +535,27 @@ a {
   font-weight: 900;
 }
 
+@media all and (max-device-width: 890px) {
+  .container__head {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .container__head .head__title {
+    width: 100%;
+  }
+  .container__head .head__title h1 {
+    width: 45%;
+    margin: 1% auto;
+  }
+  .container__head .head__menu {
+    width: 100%;
+  }
+  .container__head .head__menu .menu__liste {
+    width: 80%;
+    margin: 1% auto;
+  }
+}
 @media all and (max-device-width: 800px) {
   .container h2, .container .para--hard, .container i {
     font-size: 1.6rem;
@@ -548,6 +571,7 @@ a {
   }
   .container__head .head__title .btn--mobile {
     display: inline-block;
+    color: #fff;
     background-color: transparent;
   }
   .container__head .head__menu .menu__liste {
@@ -556,11 +580,14 @@ a {
   .container__head .head__menu .menu__mobile {
     width: auto;
   }
-  .container__head .head__menu .menu__mobile a {
+  .container__head .head__menu .menu__mobile .menu__barre {
     color: #fff;
     width: 70%;
     height: 20%;
     font-size: 3rem;
+  }
+  .container__head .head__menu .menu__mobile .menu__barre svg {
+    color: #fff;
   }
   .container__main .section--1 .section--div--1 {
     display: flex;
@@ -603,7 +630,7 @@ a {
     flex-wrap: wrap;
   }
   .section--3 .section--div--3 .projets--realise .container-projet {
-    width: 40%;
+    width: 46%;
   }
 
   .section--div--4 {
@@ -664,6 +691,9 @@ a {
     height: 20%;
     font-size: 3rem;
   }
+  .container__head .head__menu .menu__mobile a svg {
+    color: #fff;
+  }
   .container__main .section--1 .section--div--1 {
     display: flex;
     flex-direction: column;
@@ -683,6 +713,11 @@ a {
   .container__main .section--1 .section--div--1 button {
     width: 50%;
     font-size: 2rem;
+  }
+  .container__main .section--1 .section--div--1 .div--img--reseaux {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 40%;
   }
   .container__main .section--2 .section--div--2 .div--technologie .div--soft {
     width: 60%;

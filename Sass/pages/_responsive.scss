@@ -1,3 +1,23 @@
+@media all and (max-device-width : 890px){
+    .container__head{
+        @include block--flex--col;
+        //background-color: $background--btn;
+        & .head__title{
+            width: 100%;
+            h1{
+                width: 45%;
+                margin: 1% auto;
+            }
+        }
+        & .head__menu{
+            width: 100%;
+            .menu__liste{
+                width: 80%;
+                margin: 1% auto;
+            }
+        }
+    }
+}
 @media all  and (max-device-width :800px){
     .container{
         h2, .para--hard, i{
@@ -14,6 +34,7 @@
                 }
                 .btn--mobile{
                     display: inline-block;
+                    color: #fff;
                     background-color: transparent;
                 }
             }
@@ -24,16 +45,16 @@
                 }
                 .menu__mobile{
                     width: auto;
-                    & a{
+                    & .menu__barre{
                         color: #fff;
                         width: 70%;
                         height: 20%;
                         font-size: 3rem;
+
+                        svg{
+                            color: #fff;
+                        }
                     }
-                }
-                .menu__barre{
-                }
-                .mobile--menu--1, .mobile--menu--2{
                 }
             }
         }
@@ -86,11 +107,8 @@
                flex-direction: row;
                justify-content: space-between;
                flex-wrap: wrap;
-            //    display: grid;
-            //    grid-template-columns: repeat(2, 1fr);
-
                .container-projet{
-                   width: 40%;
+                   width: 46%;
                }
            }
        }
@@ -148,6 +166,7 @@
                 .btn--mobile{
                     display: inline-block;
                     background-color: transparent;
+                    
                 }
             }
             .head__menu{
@@ -162,6 +181,9 @@
                         width: 70%;
                         height: 20%;
                         font-size: 3rem;
+                        & svg{
+                            color: #fff;
+                        }
                     }
                 }
                 .menu__barre{
@@ -188,6 +210,11 @@
                     button{
                         width: 50%;
                         font-size: 2rem;
+                    }
+                    .div--img--reseaux{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        margin: 0 40%;
                     }
                 }
             }

@@ -4,12 +4,6 @@
 .head__menu, .head__title{
     @include display--inline;
 }
-.block--view{
-    display: flex;
-}
-.btn--mobile{
-    display: none;
-}
 .head__menu{
     width: 58%;
     @include block--flex--row;
@@ -53,6 +47,9 @@
             width: 50%;
             margin: auto;
             margin-top: 0%;
+            .img--profile{
+                margin-bottom: 2%;
+            }
             & h2, & p{
                 color: rgba(255, 255, 255, 0.925);
                 font-weight: 700;
@@ -263,7 +260,6 @@
         height: auto;
         height: 100%;
         top: 0;
-        display: none;
         .div--contact--form--hidden{
             position: relative;
             padding: 7%;
