@@ -4,6 +4,9 @@
 .head__menu, .head__title{
     @include display--inline;
 }
+.block--view{
+    display: flex;
+}
 .btn--mobile{
     display: none;
 }
@@ -45,7 +48,6 @@
     padding: 2%;
     &--1{
         background-size:100%;
-        border-bottom: 2px solid #00f;
         background-color: #718093;
         .section--div--1{
             width: 50%;
@@ -348,8 +350,10 @@
         font-size: 2rem;
         transform:translateY(1);
         transition: translate 200ms;
+        &:first-child{
+            font-size: 3.2rem;
+        }
         i{
-            font-size: 4rem;
             margin-right: 5%;
         }
         &:hover{
@@ -358,7 +362,4 @@
             font-weight: 900;
         }
     }
-}
-.block--view{
-    display: flex;
 }
