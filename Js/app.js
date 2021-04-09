@@ -1,23 +1,24 @@
-let link_linkedin = document.querySelector(".link--linkedin");
-let link_github = document.querySelector(".link--github");
-let link_instagram = document.querySelector(".link--instagram");
-let link_twitter = document.querySelector(".link--twitter");
+let link_linkedin = document.querySelector(".link--linkedin"),
+    link_github = document.querySelector(".link--github"),
+    link_instagram = document.querySelector(".link--instagram"),
+    link_twitter = document.querySelector(".link--twitter"),
+    link_gmail = document.querySelector(".link--gmail"),
+    link_linkedin_coordonnee = document.querySelector(".container--coordonnees .link--linkedin"),
+    link_github_coordonnee = document.querySelector(".container--coordonnees .link--github");
+
 
 let img__profile = document.querySelector(".img--profile"),
     my__name = document.querySelector(".myname");
 
-let msg_apropos = document.querySelector(".div--apropos p");
-
 let img_html = document.querySelectorAll(".img--language");
-console.log(img_html);
-var link_server;
+
 /**
  * 
  * @param {Prends la table qu'on veut sélectionner} table 
  * @returns {ça returne un lien avec le nom de la table}
  */
 function link_server_json (table){
-    link_server ="https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/"+table;
+    let link_server ="https://my-json-server.typicode.com/Bayekula-hb/KDA_Projet7/"+table;
     return link_server;
 }
 
@@ -38,8 +39,11 @@ window.addEventListener("load", ()=>{
         for(const lien of donnee) {
             link_instagram.setAttribute('href',lien.instagram);
             link_linkedin.setAttribute('href',lien.linkedin);
+            link_linkedin_coordonnee.setAttribute('href', lien.linkedin);
             link_twitter.setAttribute('href',lien.twitter);
             link_github.setAttribute('href',lien.github);
+            link_github_coordonnee.setAttribute('href',lien.github);
+            link_gmail.setAttribute('href',lien.gmail);
         }
     });
     link = link_server_json("language");
