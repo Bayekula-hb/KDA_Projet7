@@ -54,45 +54,19 @@ window.addEventListener("load", ()=>{
         console.log(data_img[3].title);
     });
 });
-
-let btn__contact = document.querySelector(".btn--contact--menu");
-let section = document.querySelector(".section--div--4--hidden");
+/**
+ * Le popup du portfolio
+ */
+let btn__contact = document.querySelector("li .btn--contact--menu");
+let section = document.querySelector("main .section--4--hidden");
+let class__list = section.classList;
 let btn__fermer = document.querySelector(".btn--close");
 
 btn__contact.addEventListener("click", function(event){
     event.preventDefault();
-    let class__list = section.classList;
-    class__list.replace("block--hide", "block--view");
-
-    //section.style.display = "flex";
-    //section.setAttribute("class", "block--view");
-    //add_class(section,"block--view");
+    section.classList.toggle("block--hide");
 });
 btn__fermer.addEventListener("click", function(event){
     event.preventDefault();
-    //section.classList.toggle("block--view");
-    //delette_classe(section, "block--view");
-    section.classList.replace("block--view", "block--hide");
-    //document.querySelector(".section--div--4--hidden").style.display = "none";
+    section.classList.toggle("block--hide");
 })
-console.log(btn__contact);
-console.log(section);
-
-// let btn_menu = document.querySelector(".head__menu .menu__barre");
-//   let  menu_liste = document.querySelector(".head__menu .menu__liste"),
-let   btn_menu  = document.getElementById("id_menu_barre");
-let menu_liste = document.getElementById("id_menu_liste");
-btn_menu.addEventListener("click", function(e){
-    e.preventDefault();
-    //menu_liste.classList.add("block--view");
-    let view = menu_liste.classList.toggle("none")
-    if(view){
-        menu_liste.classList.add("block--view")
-        console.dir(menu_liste.classList)
-    }
-    else{
-        menu_liste.classList.remove("block--view")
-        console.dir(menu_liste.classList)
-
-    }
-});
