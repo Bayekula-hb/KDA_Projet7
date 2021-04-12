@@ -584,6 +584,7 @@ a {
     flex-direction: column;
     align-content: center;
     top: 5%;
+    display: none;
   }
   .container__head .head__menu .menu__mobile {
     width: auto;

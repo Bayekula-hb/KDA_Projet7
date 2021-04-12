@@ -42,10 +42,10 @@
             }
             .head__menu{
                 .menu__liste{
-                    //@include block--hide;
                     position: relative;
                     @include block--flex--col;
                     top: 5%;
+                    @include block--hide;
                 }
                 .menu__mobile{
                     width: auto;
