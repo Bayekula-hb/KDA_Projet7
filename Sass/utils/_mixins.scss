@@ -68,7 +68,9 @@
         }
     }
 }
-
+@mixin block--hide{
+    display: none;
+}
 @mixin about {
     width: 47%;
     font-size: 2rem;

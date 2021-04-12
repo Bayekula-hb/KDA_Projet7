@@ -70,3 +70,13 @@ btn__fermer.addEventListener("click", function(event){
     event.preventDefault();
     section.classList.toggle("block--hide");
 })
+
+let btn__menu = document.querySelector(".menu__barre"),
+    list__menu = document.querySelector(".menu__liste");
+
+    console.log("la liste du menu contient : "+list__menu.classList);
+btn__menu.addEventListener("click", function(event){
+    list__menu.classList.toggle("block--view");
+    //list__menu.style.display = "block";
+    console.log("la liste du menu contient : "+list__menu.classList);
+});

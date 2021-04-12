@@ -1,7 +1,6 @@
 @media all and (max-device-width : 890px){
     .container__head{
-        @include block--flex--col;
-        //background-color: $background--btn;
+        @include block--flex--row;
         & .head__title{
             width: 100%;
             h1{
@@ -14,6 +13,9 @@
             .menu__liste{
                 width: 80%;
                 margin: 1% auto;
+            }
+            .menu__mobile{
+                display: block;
             }
         }
     }
@@ -39,9 +41,11 @@
                 }
             }
             .head__menu{
-                
                 .menu__liste{
-                    display: none;
+                    //@include block--hide;
+                    position: relative;
+                    @include block--flex--col;
+                    top: 5%;
                 }
                 .menu__mobile{
                     width: auto;
@@ -170,9 +174,7 @@
                 }
             }
             .head__menu{
-                
                 .menu__liste{
-                    display: none;
                 }
                 .menu__mobile{
                     width: auto;
@@ -185,10 +187,6 @@
                             color: #fff;
                         }
                     }
-                }
-                .menu__barre{
-                }
-                .mobile--menu--1, .mobile--menu--2{
                 }
             }
         }

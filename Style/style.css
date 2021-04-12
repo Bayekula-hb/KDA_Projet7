@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   font-family: "Ubuntu Mono", monospace;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -538,8 +539,8 @@ a {
 @media all and (max-device-width: 890px) {
   .container__head {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .container__head .head__title {
     width: 100%;
@@ -554,6 +555,9 @@ a {
   .container__head .head__menu .menu__liste {
     width: 80%;
     margin: 1% auto;
+  }
+  .container__head .head__menu .menu__mobile {
+    display: block;
   }
 }
 @media all and (max-device-width: 800px) {
@@ -575,7 +579,11 @@ a {
     background-color: transparent;
   }
   .container__head .head__menu .menu__liste {
-    display: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    top: 5%;
   }
   .container__head .head__menu .menu__mobile {
     width: auto;
@@ -678,9 +686,6 @@ a {
   .container__head .head__title .btn--mobile {
     display: inline-block;
     background-color: transparent;
-  }
-  .container__head .head__menu .menu__liste {
-    display: none;
   }
   .container__head .head__menu .menu__mobile {
     width: auto;
