@@ -57,15 +57,21 @@ window.addEventListener("load", ()=>{
 /**
  * Le popup du portfolio
  */
-let btn__contact = document.querySelector("li .btn--contact--menu");
+
+let btn__contact = document.querySelector("li .btn--contact--menu"),
+    btn__sec1 = document.querySelector(".section--div--1 .btn--contact");
 let section = document.querySelector("main .section--4--hidden");
 let class__list = section.classList;
 let btn__fermer = document.querySelector(".btn--close");
 
-btn__contact.addEventListener("click", function(event){
-    event.preventDefault();
-    section.classList.toggle("block--hide");
-});
+function Openpopup(btn){
+    btn.addEventListener("click", function(event){
+        event.preventDefault();
+        section.classList.toggle("block--hide");
+    });
+}
+Openpopup(btn__contact);
+Openpopup(btn__sec1);
 btn__fermer.addEventListener("click", function(event){
     event.preventDefault();
     section.classList.toggle("block--hide");
